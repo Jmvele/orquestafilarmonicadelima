@@ -59,7 +59,7 @@
 
   .panel h2 {
 	white-space: nowrap;
-	font-size: 2.5em;
+	font-size: 3em;
 	font-weight: 900;
 	/* margin: 0 auto; */
 
@@ -157,6 +157,7 @@
   .a-dark {
 
 	border-bottom: 3px solid var(--gray)!important;
+	font-weight:500;
 	/* padding-bottom: 5px */
 
   }
@@ -657,4 +658,12 @@
 	nav li a{
 		font-size: 2em;
 	}
+
+	.grid-3-GL {
+		/* display: grid; */
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		/* width: 100% !important;
+		gap: 20px; */
+	  }
 }
