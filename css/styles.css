@@ -11,7 +11,7 @@
 	height: 100%;
 	-webkit-overflow-scrolling: touch;
 	/* overflow-scrolling: touch; */
-	font-family: 'Gilroy';
+	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 	font-style: normal;
 	
@@ -60,6 +60,7 @@
   .panel h2 {
 	white-space: nowrap;
 	font-size: 3em;
+	font-weight: 900;
 	/* margin: 0 auto; */
 
   }
@@ -67,6 +68,7 @@
   .panel h3 {
 	white-space: nowrap;
 	font-size: 1.75em;
+	font-weight: 900;
 	/* margin: 0 auto; */
 
   }
@@ -245,7 +247,7 @@
 	padding: 1px 0px;
 	/* margin-bottom: 0px; */
 	font-size: 3.5px;
-	font-family: 'Gilroy';
+	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 	font-style: normal;
 	text-transform: uppercase;
@@ -509,8 +511,8 @@
 	color: var(--gray);
 	text-decoration: none;
 	text-transform: uppercase;
-	font-family: 'Gilroy';
-	font-weight: bold;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
 	display: inline-block;
 	line-height: 1;
 	transition: color 0.3s; 
