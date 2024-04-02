@@ -25,8 +25,8 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 
     <!--Questrial(Gilroy)-->
-    <link rel="preload" href="assets/Gilroy-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/Gilroy-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link  href="assets/Gilroy-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link  href="assets/Gilroy-Light.woff2" as="font" type="font/woff2" crossorigin>
     
 
     <title>OFL | Orquesta Filarmónica de Lima</title>
@@ -38,8 +38,40 @@
    
       <div class="container gray">
         <div id="NavBar" class="rectangle white"></div>
-        <div id="hamburger" class="circle white"><div id="hamburgerRect"class="rectangle yellow"></div></div>
-        <div class="circle logo"></div>
+        <div id="hamburger" class="circle white">
+
+          <button class="menu-toggle" id="menuToggle">
+            <svg viewBox="0 0 12 10" class="hamburgerToggle" height="40px" width="40px">
+              <path d="M2,3.5 L10,3.5" class="bar-1"></path>
+              <path d="M2,6.5 L10,6.5" class="bar-2"></path>
+
+            </svg>
+
+          </button>
+          
+          
+          <div id="hamburgerRect"class="rectangle yellow"></div>
+        </div>
+        <a href="index.html"><div class="circle logo"></div></a>
+    
+            <section class="fullpage-menu">
+              <div class="fullpage-menu-inner">
+                <div class="menu-bg">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <nav>
+                  <ul class="main-menu">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="conciertos.html">Conciertos</a></li>
+                    <li><a href="amigos.html">Amigos de la OFL</a></li>
+                    <li><a href="orquesta.html">La Orquesta</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </section>
         
 
 <!-- ---------------------------------------HOMGE PAGE---------------------------- -->
@@ -50,14 +82,19 @@
 
           <div id="Tri1" class="yellowtriangle"><div id="Merchandising" class="text-yellow menu">Merchandising</div></div>
           <div id="Tri2" class="yellowtriangle"></div>
-          <div id="Tri3" class="yellowtriangle"><div id="Amigos"class="menu">Amigos de la OFL</div></div>
+          <div id="Tri3" class="yellowtriangle">
+            <a href="amigos.html"><div id="Amigos"class="menu text-white">Amigos de la OFL</div></a>
+          </div>
+          
           <div id="Tri4" class="yellowtriangle">
-            <div id="Rect2" class="rectangle yellow position-absolute"></div><div id="Nosotros" class="text-yellow menu">Nosotros</div>
+            <div id="Rect2" class="rectangle yellow position-absolute"></div><a href="nosotros.html"><div id="Nosotros" class="text-yellow menu">Nosotros</div></a>
           </div>
           <div id="Tri5" class="whitetriangle"></div>
           
 
-          <div id="Rect1" class="rectangle yellow"><div id="Conciertos" class="menu">Conciertos</div></div>
+          <div id="Rect1" class="rectangle yellow">
+            <div id="Conciertos" class="menu text-white"><a href="conciertos.html">Conciertos</a></div>
+          </div>
           
           <div id="Rect3" class="rectangle yellow">
             <div id="Rect4" class="rectangle yellow position-absolute"></div>
@@ -77,116 +114,111 @@
         </section>
 
 <!-- --------------------------------SECTION 1------------------------------>
-        <section class="panel display-block gray Bg_Orch1">
-          <h2 class="mx-20 padding-top my-0 text-yellow">Un poco de</h2> 
-          <h1 class="mx-20 text-white">historia</h1>
-          <div class="mx-20 text-box">
-            <p>La historia de la OFL se remonta a los años 60’ en su primera edición gestionada por el maestro José Malasio Montoya y 40 jóvenes músicos radicados en la ciudad de Lima.</p>
-          </div>
-          <div class="mx-20 padding-top text-box">
-            <div class="flexbox">
-              <a class="text-yellow" href="#" target="_self">Conoce más sobre la trayectoria de la OFL</a>
-              <div class="yellowtriangle linktriangle my-0"></div> 
+        <section class="panel center-horizontal gray Bg_Orch1">
+          <div class="mx-20">
+            <h2 class=" my-0 text-yellow">Un poco de</h2> 
+            <h1 class=" text-white">historia</h1>
+            <div class=" text-box">
+              <p>La historia de la OFL se remonta a los años 60’ en su primera edición gestionada por el maestro José Malasio Montoya y 40 jóvenes músicos radicados en la ciudad de Lima.</p>
             </div>
-                        
-          </div>
-
+            <div class="padding-top text-box">
+              <div class="flexbox">
+                <a class="text-yellow" href="nosotros.html" target="_self">Conoce más sobre la trayectoria de la OFL</a>
+                <div class="yellowtriangle linktriangle my-0"></div> 
+              </div>
+                          
+            </div>
+          </div>  
         </section>
 
 
 <!-- --------------------------------SECTION 2------------------------------>
 
 
-        <section class="panel display-block gray">
-          <h2 class="mx-20 padding-top my-0 text-yellow">¡Sé parte de los</h2> 
-          <h1 class="mx-20 text-white">amigos de la OFL!</h1>
-          <div class="mx-20 text-box">
-            <p>La tercera edición de La Orquesta Filarmónica de Lima apuesta por generar alianzas estratégicas con las principales instituciones culturales del país y del mundo, gestionando convenios de colaboración mutua.</p>
-          </div>
-
-          <div class="mx-20 padding-top flexbox-space-between">
-              <div class="text-box">
-                <div class="flexbox">
-                  <a class="text-yellow" href="#" target="_self">Conoce más sobre cómo formar parte de esta familia</a>
-                  <div class="yellowtriangle linktriangle my-0"></div> 
-                </div>                        
-              </div>
-
-              <div>
-                  <div class="circle white image-card" style="background-image: url(assets/BG_Orchesta_1.jpg); background-position: center; background-size: cover; "></div>
-                  <div class="circle white circle-card"></div>
-              </div>
-          </div>
-        </section>
-
-
-
-<!-- --------------------------------SECTION 3------------------------------>
-
-
-
-        <section class="panel display-block gray">
-          <h2 class="mx-20 padding-top my-0 text-yellow">Próximo Concierto</h2>
-          
-          <div class="mx-20 padding-top">
-            <div class=" flexbox center">
-              <div class="rectangle white concert-showcase gray"></div>
-
-            </div>
-
-
+        <section class="panel center-horizontal  gray">
+          <div class="mx-20">
+            <h2 class="my-0 text-yellow">¡Sé parte de los</h2> 
+            <h1 class="text-white">amigos de la OFL!</h1>
             <div class="text-box">
-              <div class="flexbox">
-                <a class="text-yellow" href="https://www.joinnus.com/events/concerts/lima-orquesta-filarmonica-de-lima-primer-concierto-de-la-temporada-2024-60198" target="_self">Adquiere tus entradas en Joinnus</a>
-                <div class="yellowtriangle linktriangle my-0"></div> 
-              </div>                        
+              <p>La tercera edición de La Orquesta Filarmónica de Lima apuesta por generar alianzas estratégicas con las principales instituciones culturales del país y del mundo, gestionando convenios de colaboración mutua.</p>
             </div>
 
+            <div class="padding-top flexbox-space-between">
+                <div class="text-box">
+                  <div class="flexbox">
+                    <a class="text-yellow" href="amigos.html" target="_self">Conoce más sobre cómo formar parte de esta familia</a>
+                    <div class="yellowtriangle linktriangle my-0"></div> 
+                  </div>                        
+                </div>
 
-
-          </div>
-
-
-
+                <div>
+                    <div class="circle white image-card" style="background-image: url(assets/amigos-circlecard.jpg); background-position: center; background-size: cover; "></div>
+                    <div class="circle white circle-card"></div>
+                </div>
+            </div>
+        </div>
         </section>
+
+
+ <!-- --------------------------------SECTION 3------------------------------>
+
+
+
+ 
+ <section class="panel center-horizontal  gray">
+  <div class="mx-20">
+    <h2 class="my-0 text-yellow">Próximo Concierto</h2>
+
+    <div class="padding-top">
+      <div class="rectangle white concert-showcase gray "></div>
+
+    </div>
+
+    <div class="text-box padding-top">
+      <div class="flexbox">
+        <a class="text-yellow" href="https://www.joinnus.com/events/concerts/lima-orquesta-filarmonica-de-lima-primer-concierto-de-la-temporada-2024-60198" target="_self">Adquiere tus entradas en Joinnus</a>
+        <div class="yellowtriangle linktriangle my-0"></div> 
+      </div>                        
+    </div>
+
+
+
+</div>
+</section>
       
 <!-- --------------------------------SECTION 4------------------------------>
 
-        <section class="panel display-block white">
-          <h2 class="mx-20 padding-top my-0 text-gray">Partners</h2> 
+<section class="panel center-horizontal  white" style="display: grid;">
+  <div class="mx-20">
+    <h2 class="my-0 text-gray">Partners</h2> 
+    <div class="padding-top flexbox center" style="flex-direction: column;">
+      
+      <div class="grid-partners">
 
-          <div class="mx-20 padding-top flexbox center" style="flex-direction: column;">
-
-              <div class="flexbox-partners">
-
-                  <div class="circle gray mx-2"></div>
-                  <div class="circle gray mx-2"></div>
-                  <div class="circle gray mx-2"></div>
-                  <div class="circle gray mx-2"></div>
-                  <div class="circle gray mx-2"></div>
-                  <div class="circle gray mx-2"></div>
-                  <div class="circle gray mx-2"></div>
-                  <div class="circle gray mx-2"></div>
-              </div>
-
-              <div class="text-box">
-                <div class="flexbox center padding-top">
-                  <a class="text-gray a-dark" href="#" target="_self">Suscríbete para seguir a la OFL</a>
-                  <div class="graytriangle linktriangle my-0"></div> 
-                </div>                        
-              </div>
-
-          </div>
-
-
-
-
-        </section>
+        <div class="mx-2 flexbox center" style="background-image: url(assets/Asset\ 2.png); width: 150px; height: 100px; background-repeat: no-repeat;background-attachment:fixed;background-size:contain; background-position: center;"></div>
+        <div class="mx-2 flexbox center" style="background-image: url(assets/Asset\ 3.png); width: 150px; height: 100px; background-repeat: no-repeat;background-attachment:fixed;background-size:contain; background-position: center;"></div>
+        <div class="mx-2 flexbox center" style="background-image: url(assets/Asset\ 4.png); width: 150px; height: 100px; background-repeat: no-repeat;background-attachment:fixed;background-size:contain; background-position: center;"></div>
+        <div class="mx-2 flexbox center" style="background-image: url(assets/Asset\ 5.png); width: 150px; height: 100px; background-repeat: no-repeat;background-attachment:fixed;background-size:contain; background-position: center;"></div>
+        <div class="mx-2 flexbox center" style="background-image: url(assets/Asset\ 2.png); width: 150px; height: 100px; background-repeat: no-repeat;background-attachment:fixed;background-size:contain; background-position: center;"></div>
+        <div class="mx-2 flexbox center" style="background-image: url(assets/Asset\ 3.png); width: 150px; height: 100px; background-repeat: no-repeat;background-attachment:fixed;background-size:contain; background-position: center;"></div>
+        <div class="mx-2 flexbox center" style="background-image: url(assets/Asset\ 4.png); width: 150px; height: 100px; background-repeat: no-repeat;background-attachment:fixed;background-size:contain; background-position: center;"></div>
+        <div class="mx-2 flexbox center" style="background-image: url(assets/Asset\ 5.png); width: 150px; height: 100px; background-repeat: no-repeat;background-attachment:fixed;background-size:contain; background-position: center;"></div>
         
+    </div>
+      <div class="text-box padding-top">
+        <div class="flexbox center ">
+          <a class="text-gray a-dark" href="#" target="_self">Suscríbete para seguir a la OFL</a>
+          <div class="graytriangle linktriangle my-0"></div> 
+        </div>                        
       </div>
+    </div>
+
+
+</div>
+</section>
       
 
-
+</div>
     
     <!--JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -194,6 +226,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     
     <script  src="js/main.js"></script>
+    <script  src="js/intro-anime.js"></script>
+    <script  src="js/navigation.js"></script>
    </body>
 
 </body>
