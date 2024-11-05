@@ -54,6 +54,15 @@ gsap.from ("#Filarmonica" , {
   
 });
 
+gsap.from ("#title" , {
+  duration: 1, 
+  y: 20, 
+  opacity:0,
+  delay: 0.2,
+  stagger: 0.2
+  
+});
+
 
 
 //INTRO ANIMATION
