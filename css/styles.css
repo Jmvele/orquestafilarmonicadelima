@@ -5,6 +5,9 @@
   }
 
 
+  .mobile-show{
+	display: none;
+  }
 
   html, body {
 	margin: 0;
@@ -177,6 +180,7 @@
 	transform: translateX(2px) rotate(180deg) ;
   }
 
+  .display-grid {display: grid;}
 
   .flexbox {
 	display: flex;
@@ -325,6 +329,11 @@
 	margin-bottom: 2rem !important;
   }
 
+  .mx-1{
+	margin-left: 1rem !important;
+	margin-right: 1rem !important;
+  }
+
    .center{ 
     justify-content: center !important;
 	align-items: center !important; 
@@ -334,6 +343,10 @@
 		/* justify-content: center !important; */
 		align-items: center !important; 
 		}
+
+	.text-center{
+		text-align: center;
+	}
 
 
 
@@ -666,4 +679,91 @@
 		/* width: 100% !important;
 		gap: 20px; */
 	  }
+}
+
+/* Responsive Design - Adjustments for Mobile Devices */
+@media (max-width: 768px) {
+    /* Adjust general font sizes */
+   
+	.mobile-hide{
+		display: none;
+	}
+
+	.mobile-show{
+		display: block;
+	  }
+	
+	body {
+        font-size: 14px;
+    }
+
+    .panel {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+
+	.big-text{
+		font-size: 3.5em!important;
+	  }
+
+
+
+    /* Ensure full-width on small screens */
+    .container, .content, .section {
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    /* Stack items vertically if needed */
+    .grid, .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Header and Menu adjustments */
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Image adjustments */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further reduce font sizes and paddings */
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        padding: 8px;
+    }
+
+    .title, h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    /* Ensure full stacking on very small screens */
+    .flex-container {
+        flex-direction: column;
+    }
+
+    /* Hide sidebar or additional navigation for smaller screens */
+    .sidebar {
+        display: none;
+    }
+    
+    /* Padding adjustments for smaller viewports */
+    .content, .container {
+        padding: 5px;
+    }
 }
