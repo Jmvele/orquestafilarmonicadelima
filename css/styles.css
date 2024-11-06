@@ -104,7 +104,7 @@
 
   .container2 {
 	overscroll-behavior: none;
-	width: 200vw;
+	width: 100vw;
 	height: 100%;
 	display: flex;
 	flex-wrap: nowrap;
@@ -123,6 +123,13 @@
 
   .big-text{
 	font-size: 5em!important;
+  }
+
+  .text-serif{
+	font-family: "EB Garamond", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
   }
 
   .position-absolute{
@@ -321,6 +328,10 @@
 
   .padding-bottom-10{
 	padding-bottom: 10rem !important;
+  }
+
+  .padding-bottom-5{
+	padding-bottom: 5rem !important;
   }
 
   .margin-bottom-5{
@@ -674,10 +685,12 @@
 	
 	nav ul{
 		padding-inline-start: 20px;
+		transform: translateY(-100px);
+		text-align: center;
 	}
 
 	nav li a{
-		font-size: 2em;
+		font-size: 3em;
 	}
 
 	.grid-3-GL {
@@ -700,6 +713,11 @@
 	.mobile-show{
 		display: block;
 	  }
+
+	.mobile-show a {
+		text-decoration: none;
+		border-bottom: 3px solid var(--yellow);
+	}  
 	
 	body {
         font-size: 14px;
@@ -714,7 +732,70 @@
 		font-size: 4em!important;
 	  }
 
+	.text-box{
+		padding-top: 1rem !important;
+		/* padding-left: 1rem !important;
+		padding-right: 1rem !important; */
+		width: 100%;
+		line-height: 1.5 !important;
+		font-size: 16px;
+		text-align: center;
 
+	  }
+	  
+	  .flexbox{
+		/* flex-direction: column; */
+		justify-content: center;
+	  }
+
+	  .linktriangle {
+		position: relative;
+		transform: translateX(-15px)rotate(180deg) scale(0.2);
+	  }
+
+	.Bg_Orch1{
+		background-image: url("../assets/BG_Orchesta_1.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:auto;
+	
+	  }
+	  
+	  .Bg_Orch2{
+		background-image: url("../assets/BG_2.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:auto;
+	
+	  }
+	  
+	  .Bg_Orch3{
+		background-image: url("../assets/BG_3.jpg");
+		background-position: center;
+		background-size:contain;
+	
+	  }	
+	  
+	  .concert-showcase{
+	
+		background-size: auto 60%;
+		background-color: black;
+		background-repeat: no-repeat;
+		
+	  }
+
+	  .grid-partners {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		width: 100% !important;
+	  }
+
+	  .flexbox-space-between {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	  }
 
     /* Ensure full-width on small screens */
     .container, .content, .section {
@@ -744,7 +825,18 @@
         max-width: 100%;
         height: auto;
     }
+
+	.mx-20 {
+		margin-right: 1rem !important;
+		margin-left: 1rem !important;
+		text-align: center;
+	  }
+	
 }
+
+.image-card-concert{
+	background-image: url(../assets/Asset\ 1-concert.png); background-position: center; background-size: cover; transform: translateY(100px) scale(3)  
+  }
 
 @media (max-width: 480px) {
     /* Further reduce font sizes and paddings */
